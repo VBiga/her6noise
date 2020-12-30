@@ -9,13 +9,12 @@ An important modification of the GOPosc pipeline include the background normalis
 done by dividing Venus::Her6 fluorescence by mKeima-H2B nuclear fluorescence for each track (corresponding to a single
 cell) at each available timepoint. Another main modification is the use of a prior for the oscillatory lengthscale. 
 This improves log-likelihood and aides in the selection of the correct model (periodic or aperiodic) as described in
-the Methods @ Soto & Biga 2020. Further other modifications were made to account for particular requirements of the data
+the Methods @ Soto & Biga et al. Further other modifications were made to account for particular requirements of the data
 such as the use of pairwise CTRL and mBSM (mutant) datasets. 
 
-Before running the code please download the customised GPML toolbox version shared at 
-https://github.com/ManchesterBioinference/GPosc/tree/master/General-tool/GPML.zip and make sure that an unarchived copy of
-this is located in the same directory as the periodicity routines. Full use of GPML requires running the startup.m routine which has
-been included in the custom code for convenience. Following this simply run main_periodicity.m.
+To run the routines download the content of the folder named Periodicity and unarchive them. You will also need to
+download the customised GPML toolbox version shared at https://github.com/ManchesterBioinference/GPosc/tree/master/General-tool/GPML.zip 
+and make sure that an unarchived copy of GPML (as a folder) is located in the same directory as the periodicity routines. Full use of GPML requires running the startup.m routine which hasbeen included in the custom code for convenience. All that is left is to run main_periodicity.m.
 
 No issues were observed when using different MATLAB versions and the code has been tested on R2019a. 
 
